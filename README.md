@@ -20,21 +20,37 @@ The CSV Converter App is a Ruby on Rails application that allows users to conver
 
 ## Installation
 
-1. Install Ruby
+### Local environment:
 
+1. Make sure `ruby 3.1.2` is installed by running `ruby -v`
 2. Install the dependencies by running the following command within the project directory:
 
-   ```bash
-   bundle install
-   ```
+```bash
+rails db:migrate
+```
+
+3. Migrate the database:
+
+```bash
+bundle install
+```
 
 3. Start the Rails server:
 
-   ```bash
-   rails server
-   ```
+```bash
+rails server
+```
 
 4. The application will be accessible at `http://localhost:3000`.
+
+### Docker:
+
+1. Make sure `docker` and `docker-compose` is installed by running `docker -v` and `docker-compose -v`
+2. Start docker compose:
+
+```bash
+docker-compose up --build
+```
 
 ## API Usage
 
