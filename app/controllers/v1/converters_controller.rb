@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module V1
   class ConvertersController < ApplicationController
     protect_from_forgery with: :null_session

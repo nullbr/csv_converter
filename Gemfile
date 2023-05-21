@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -56,6 +58,14 @@ group :development, :test do
 end
 
 group :development do
+  # Code Linting
+  # Linting
+  gem 'rubocop'
+  gem 'rubocop-minitest'
+  gem 'rubocop-performance'
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec'
+
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
