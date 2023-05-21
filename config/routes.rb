@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
-
-  post '/convert', to: 'converters#convert'
+  api_version(module: 'V1', header: { name: 'Accept-Version', value: '1' }, default: true) do
+    post '/convert', to: 'converters#convert'
+  end
 end
