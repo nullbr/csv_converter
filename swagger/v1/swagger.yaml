@@ -1,0 +1,37 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/convert":
+    post:
+      summary: Converts JSON to CSV
+      tags:
+      - Converters
+      parameters: []
+      responses:
+        '200':
+          description: CSV generated successfully
+          content:
+            text/csv:
+              schema:
+                type: string
+        '400':
+          description: Invalid JSON payload
+          content:
+            text/csv:
+              schema:
+                type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
