@@ -52,6 +52,8 @@ rails server
 docker-compose up --build
 ```
 
+3. The application will be accessible at `http://localhost:3000`.
+
 ## API Usage
 
 ### Endpoint
