@@ -26,13 +26,13 @@ The CSV Converter App is a Ruby on Rails application that allows users to conver
 2. Install the dependencies by running the following command within the project directory:
 
 ```bash
-rails db:migrate
+bundle install
 ```
 
 3. Migrate the database:
 
 ```bash
-bundle install
+rails db:migrate
 ```
 
 3. Start the Rails server:
